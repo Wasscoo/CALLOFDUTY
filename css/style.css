@@ -1,0 +1,33 @@
+
+h1 {
+	color : #800;
+	text-align: center;
+	font-size: 36px;
+}
+#logo {
+	text-align:center;
+}
+table {
+
+	/* ICI je donne une taille au tableau. */
+	/* C'est indispensable pour lui donner plus loin une marge à calculer en automatique */
+	/* sinon il ne sait pas quoi calculer */
+	width: 300px;
+
+	/* Ici les marges haute et basse sont nulles */
+	/* Les marges gauche et droite sont calculées automatiquement sur la base d'une taille de 300px */
+	margin:0 auto;
+
+	/* Ici je demande que les traits des cellules se touchent */
+	border-collapse: collapse;
+
+	/* Ici je centre le contenu de mes cellules */
+	text-align: center;
+}
+
+/* Ici je place une bordure noire de 1px */
+/* Noter qu'il a fallu que je change le sélecteur pour sélectionner toutes mes cellules */
+table td {
+	border: 1px solid black;	
+}
+
